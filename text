@@ -1,0 +1,55 @@
+ios-enterprise-support-portal/
+│
+├── README.md
+├── requirements.txt
+├── docker-compose.yml
+├── .env.example
+│
+├── backend/
+│   ├── app.py
+│   ├── requirements.txt
+│   ├── config.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── knowledge_base.py
+│   │   └── tickets.py
+│   ├── routes/
+│   │   ├── __init__.py
+│   │   ├── knowledge_base.py
+│   │   ├── scripts.py
+│   │   └── dashboard.py
+│   ├── scripts/
+│   │   ├── __init__.py
+│   │   ├── network_validator.py
+│   │   ├── mdm_checker.py
+│   │   ├── storage_cleaner.py
+│   │   └── utils.py
+│   └── data/
+│       ├── knowledge_base.json
+│       └── mock_devices.json
+│
+├── frontend/
+│   ├── package.json
+│   ├── public/
+│   │   └── index.html
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Header.jsx
+│   │   │   ├── SearchBar.jsx
+│   │   │   ├── KnowledgeBase.jsx
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── ScriptRunner.jsx
+│   │   │   └── MobileView.jsx
+│   │   ├── pages/
+│   │   │   ├── Home.jsx
+│   │   │   ├── KnowledgeBasePage.jsx
+│   │   │   ├── DashboardPage.jsx
+│   │   │   └── ToolsPage.jsx
+│   │   ├── services/
+│   │   │   └── api.js
+│   │   └── App.jsx
+│
+│
+└── tests/
+    ├── test_scripts.py
+    └── test_api.py
